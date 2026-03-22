@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toaleta — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #f0f4f8;
+            color: #333;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 48px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 { font-size: 28px; color: #1C58B0; margin-bottom: 8px; }
+        .subtitle { font-size: 16px; color: #666; margin-bottom: 32px; }
+        .section { margin-bottom: 24px; text-align: left; }
+        .section h2 { font-size: 16px; color: #1C58B0; margin-bottom: 8px; }
+        .section p { font-size: 15px; line-height: 1.6; }
+        a { color: #1C58B0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .email-btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background: #1C58B0;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 16px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .email-btn:hover { background: #154a96; text-decoration: none; }
+        .footer {
+            margin-top: 32px;
+            font-size: 13px;
+            color: #999;
+        }
+        .footer a { color: #999; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Toaleta Support</h1>
+        <p class="subtitle">Find public toilets near you</p>
+
+        <div class="section">
+            <h2>Contact Us</h2>
+            <p>For questions, bug reports, feature requests, or any issues with the app, please reach out via email. We typically respond within 48 hours.</p>
+        </div>
+
+        <a href="mailto:toaleta.app@gmail.com" class="email-btn">toaleta.app@gmail.com</a>
+
+        <div class="section" style="margin-top: 32px;">
+            <h2>Frequently Asked Questions</h2>
+            <p><strong>How does the app find toilets?</strong><br>
+            Toaleta uses OpenStreetMap data combined with community contributions to show public toilets, gas station restrooms, and mall facilities near your location.</p>
+            <p style="margin-top: 12px;"><strong>Why does the app need my location?</strong><br>
+            Location access is used to find nearby toilets, calculate distances, and provide walking directions. We only access your location while the app is in use and never track you in the background.</p>
+            <p style="margin-top: 12px;"><strong>Is my data private?</strong><br>
+            Yes. The app uses anonymous authentication — we never collect your name, email, or personal information. See our <a href="privacy-policy.html">Privacy Policy</a> for full details.</p>
+            <p style="margin-top: 12px;"><strong>How do I request data deletion?</strong><br>
+            Contact us at toaleta.app@gmail.com with your anonymous user ID (found in Settings) and we will delete all your cloud-stored data within 30 days.</p>
+            <p style="margin-top: 12px;"><strong>How do I get a refund?</strong><br>
+            Purchases are processed by Apple. Request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+        </div>
+
+        <div class="footer">
+            <p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms-of-use.html">Terms & Conditions</a></p>
+            <p style="margin-top: 8px;">© 2026 Toaleta App</p>
+        </div>
+    </div>
+</body>
+</html>
