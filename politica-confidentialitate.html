@@ -65,7 +65,7 @@
     <div class="container">
         <div class="lang-switch"><a href="privacy-policy.html">🇬🇧 English</a></div>
         <h1>Politica de Confidențialitate</h1>
-        <p class="updated">Ultima actualizare: 22 Martie 2026</p>
+        <p class="updated">Ultima actualizare: 25 noiembrie 2026</p>
 
         <div class="section">
             <h2>1. Introducere și Operator de Date</h2>
@@ -145,6 +145,8 @@
                 <li>Fotografiile sunt comprimate (max. 1 MB) și stocate pe Firebase Cloud Storage</li>
                 <li>Fotografiile încărcate sunt accesibile prin URL în cadrul Aplicației altor utilizatori</li>
                 <li>Fotografiile sunt utilizate exclusiv pentru a ajuta comunitatea să evalueze facilitățile</li>
+                <li>Fotografiile noi sunt verificate automat (Google Cloud Vision) și pot fi ascunse până la verificarea de către o persoană; numele și recenziile trec printr-un filtru automat de cuvinte</li>
+                <li>Vă puteți șterge propriile recenzii și toalete direct din Aplicație</li>
                 <li>Puteți solicita eliminarea fotografiilor dvs. contactându-ne cu ID-ul dvs. anonim de utilizator</li>
             </ul>
         </div>
@@ -155,7 +157,10 @@
             <ul>
                 <li><strong>Firebase (Google LLC)</strong> — autentificare anonimă, baza de date Firestore, Cloud Storage pentru fotografii, Crashlytics pentru raportarea erorilor<br>
                     Politica de confidențialitate: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
-                <li><strong>OpenStreetMap (prin API-ul Overpass)</strong> — date despre locațiile toaletelor publice. Locația dvs. aproximativă (coordonate și rază de căutare) este trimisă serverelor Overpass API<br>
+                <li><strong>Firebase App Check (Google LLC, cu Apple App Attest / DeviceCheck)</strong> — verifică faptul că cererile provin din aplicația originală, pe un dispozitiv real, pentru a preveni abuzurile. Un token de atestare a dispozitivului este schimbat cu Apple și Google; nu este asociat identității dvs.</li>
+                <li><strong>Moderarea conținutului (Cloud Functions for Firebase, europe-west1)</strong> — când un conținut este raportat, raportul (ID-ul anonim al celui care raportează, motivul, elementul raportat) este procesat automat și pus în coada de verificare umană; conținutul raportat poate fi ascuns</li>
+                <li><strong>Evaluări</strong> — o evaluare este adăugată la media toaletei (medie și număr), stocată împreună cu coordonatele toaletei; media nu conține niciun identificator, iar recenzia dvs. individuală este stocată cu ID-ul anonim</li>
+                <li><strong>OpenStreetMap (prin API-ul Overpass)</strong> — date despre locațiile toaletelor publice. Locația dvs. (coordonate și rază de căutare, sau traseul unei rute planificate) este trimisă unuia dintre serverele publice Overpass: overpass-api.de, overpass.openstreetmap.fr, overpass.kumi.systems<br>
                     Politica de confidențialitate: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a></li>
                 <li><strong>Apple MapKit</strong> — căutare locații (geocodificare) și indicații de mers pe jos. Interogările de căutare și contextul aproximativ al locației sunt trimise către Apple<br>
                     Politica de confidențialitate: <a href="https://www.apple.com/legal/privacy">apple.com/legal/privacy</a></li>
